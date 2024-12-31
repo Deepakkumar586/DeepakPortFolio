@@ -13,7 +13,7 @@ const path = require("path");
 
 app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "https://deepakportfolio-hrdc.onrender.com",
       credentials: true,
     })
   );

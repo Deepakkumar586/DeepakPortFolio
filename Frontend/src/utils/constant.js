@@ -1,1 +1,1 @@
-export const USER_API_END_POINT = "http://localhost:2727/api/user";
+export const USER_API_END_POINT = "https://deepakportfolio-hrdc.onrender.com/api/user";
