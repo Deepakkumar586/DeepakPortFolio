@@ -9,7 +9,7 @@ const path = require("path");
 
 app.use(
   cors({
-    origin: "https://your-deployed-frontend-url.com", // Ensure this is correct
+    origin: "https://deepakportfolio-n7vt.onrender.com", // Ensure this is correct
     credentials: true,
   })
 );
