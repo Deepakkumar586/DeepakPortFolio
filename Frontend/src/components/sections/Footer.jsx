@@ -106,7 +106,7 @@ const Footer = () => {
         </Nav>
       
       
-        <Copyright>&copy; 2024 Anshita Sharma. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Deepak Kumar. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
