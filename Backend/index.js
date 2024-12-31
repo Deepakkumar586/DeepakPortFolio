@@ -7,17 +7,12 @@ const userRouter = require("./route/user.js");
 const cors = require('cors');
 const path = require("path");
 
-
-
-
-
 app.use(
-    cors({
-      origin: "https://deepakportfolio-hrdc.onrender.com",
-      credentials: true,
-    })
-  );
-
+  cors({
+    origin: "https://deepakportfolio-hrdc.onrender.com", // Make sure this matches your frontend URL
+    credentials: true,
+  })
+);
 
 // path
 const _dirname = path.resolve();
@@ -26,12 +21,7 @@ app.use(express.json());
 // all user api
 app.use("/api/user", userRouter);
 
-
-// Serve static files
-// app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
-
-// Catch-all route to serve the index.html for single-page application (SPA)
-// Serve static files
+// Serve static files from the 'build' directory (Frontend's build folder)
 app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
 
 // Catch-all route to serve the index.html for single-page application (SPA)
@@ -39,11 +29,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "Frontend", "build", "index.html"));
 });
 
-
-
-
-const PORT = process.env.PORT || 8080;;
-app.listen(PORT,()=>{
-    connectDb();
-    console.log(`Server is running on ${PORT}`);
-})
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  connectDb();
+  console.log(`Server is running on ${PORT}`);
+});
