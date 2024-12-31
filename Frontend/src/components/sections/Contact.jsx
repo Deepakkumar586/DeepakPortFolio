@@ -117,37 +117,33 @@ const Contact = () => {
     e.preventDefault();
     setFeedback("");
     setLoading(true);
-
-    // Basic validation
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.subject ||
-      !formData.desc
-    ) {
+  
+    if (!formData.name || !formData.email || !formData.subject || !formData.desc) {
       setFeedback("All fields are required!");
       setLoading(false);
       return;
     }
-
+  
     try {
-      const res = await axios.post(`${USER_API_END_POINT}/senddata`, formData, {
-        // withCredentials: true,
+      const response = await fetch("https://deepakportfolio-n7vt.onrender.com/api/user/senddata", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true, 
+        body: JSON.stringify(formData),
       });
+      if (!response.ok) throw new Error("Network response was not ok");
+      const result = await response.json();
       setFeedback("Message sent successfully!");
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        desc: "",
-      });
     } catch (err) {
+      console.error("Fetch error:", err);
       setFeedback("Failed to send the message. Please try again later.");
-      console.error("Error sending data:", err);
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <Container>
