@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cd Frontend && npm install && npm run build", 
-    "start": "npm install && node Backend/index.js",
-    "dev": "nodemon Backend/index.js"
+    "build": "cd Frontend && npm install && npm run build",
+  "start": "npm install && node Backend/index.js",
+  "dev": "nodemon Backend/index.js"
   },
   "keywords": [],
   "author": "",

@@ -2,22 +2,15 @@ const mongoose = require("mongoose");
 
 const connectDb = async () => {
   try {
-    const dbUrl = process.env.MONGODB_URL; // Fetch the URL from environment variable
+    const dbUrl = process.env.MONGODB_URL;
     if (!dbUrl) {
-      throw new Error("MongoDB URL is not defined in the environment variables");
+      throw new Error("MongoDB URL is not defined");
     }
 
-    // Log the connection URL for debugging
-    console.log("MongoDB URL:", dbUrl);
-
-    await mongoose.connect(dbUrl, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-
+    await mongoose.connect(dbUrl); // No need for `useNewUrlParser` and `useUnifiedTopology`
     console.log("Database connection established");
   } catch (err) {
-    console.error("Database connection failed", err);
+    console.error("Database connection failed", err.message);
     process.exit(1);
   }
 };
