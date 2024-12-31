@@ -28,7 +28,7 @@ app.use("/api/user", userRouter);
 
 
 // Serve static files
-app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
+// app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
 
 // Catch-all route to serve the index.html for single-page application (SPA)
 // Serve static files
