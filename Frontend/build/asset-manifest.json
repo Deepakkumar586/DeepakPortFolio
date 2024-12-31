@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58a0c615.css",
+    "main.js": "/static/js/main.2e4b764f.js",
+    "static/media/deep.png": "/static/media/deep.2525086a230dc34b1423.png",
+    "static/media/TalentHive.png": "/static/media/TalentHive.eaeceeb95f4fe04f4c77.png",
+    "index.html": "/index.html",
+    "main.58a0c615.css.map": "/static/css/main.58a0c615.css.map",
+    "main.2e4b764f.js.map": "/static/js/main.2e4b764f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58a0c615.css",
+    "static/js/main.2e4b764f.js"
+  ]
+}
