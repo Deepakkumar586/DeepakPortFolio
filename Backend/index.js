@@ -31,14 +31,18 @@ app.use("/api/user", userRouter);
 app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
 
 // Catch-all route to serve the index.html for single-page application (SPA)
+// Serve static files
 app.use(express.static(path.join(__dirname, "..", "Frontend", "build")));
+
+// Catch-all route to serve the index.html for single-page application (SPA)
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "Frontend", "build", "index.html"));
 });
 
 
 
-const PORT = process.env.PORT || 2727;
+
+const PORT = process.env.PORT || 8080;;
 app.listen(PORT,()=>{
     connectDb();
     console.log(`Server is running on ${PORT}`);
