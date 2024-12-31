@@ -37,7 +37,7 @@ app.get("*", (req, res) => {
 console.log(path.join(__dirname, "..", "Frontend", "dist"));
 
 
-const PORT = process.env.PORT | 2727;
+const PORT = process.env.PORT || 2727;
 app.listen(PORT,()=>{
     connectDb();
     console.log(`Server is running on ${PORT}`);
