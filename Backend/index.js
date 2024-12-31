@@ -1,16 +1,18 @@
-const express = require('express');
-const app = express();
-const dotenv = require('dotenv');
-dotenv.config();
+const express = require("express");
+const dotenv = require("dotenv");
 const connectDb = require("./utils/db");
 const userRouter = require("./route/user.js");
-const cors = require('cors');
+const cors = require("cors");
 const path = require("path");
+
+dotenv.config();
+const app = express();
 
 app.use(
   cors({
     origin: "https://deepakportfolio-n7vt.onrender.com", // Ensure this is correct
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 

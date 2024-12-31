@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { USER_API_END_POINT } from "../../utils/constant";
-import axios from "axios";
+import axios from "axios";  // Importing axios
 
 const Container = styled.div`
   display: flex;
@@ -117,33 +116,32 @@ const Contact = () => {
     e.preventDefault();
     setFeedback("");
     setLoading(true);
-  
+
     if (!formData.name || !formData.email || !formData.subject || !formData.desc) {
       setFeedback("All fields are required!");
       setLoading(false);
       return;
     }
-  
+
     try {
-      const response = await fetch("https://deepakportfolio-n7vt.onrender.com/api/user/senddata", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        withCredentials: true, 
-        body: JSON.stringify(formData),
-      });
-      if (!response.ok) throw new Error("Network response was not ok");
-      const result = await response.json();
+      const response = await axios.post(
+        "https://deepakportfolio-n7vt.onrender.com/api/user/senddata",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+        }
+      );
       setFeedback("Message sent successfully!");
     } catch (err) {
-      console.error("Fetch error:", err);
+      console.error("Axios error:", err);
       setFeedback("Failed to send the message. Please try again later.");
     } finally {
       setLoading(false);
     }
   };
-  
 
   return (
     <Container>
