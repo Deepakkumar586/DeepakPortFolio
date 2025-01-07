@@ -4,7 +4,7 @@ export const Bio = {
   name: "Deepak Kumar",
   roles: ["Full Stack Developer", "Frontend Developer", "Backend Developer"],
   description:
-    "I am a driven and adaptable professional with a strong passion for problem-solving and a dedication to personal and professional growth. I thrive on tackling complex challenges, leveraging data insights, and crafting innovative solutions. Committed to lifelong learning, I continuously seek opportunities to enhance my expertise and make meaningful contributions.",
+    "I am a highly motivated and versatile professional with a deep passion for solving complex problems and driving meaningful change. With a knack for leveraging data insights and innovative thinking, I excel at crafting solutions that deliver impact and value. My dedication to lifelong learning fuels my commitment to continuous growth, enabling me to adapt to new challenges and expand my expertise. I thrive in dynamic environments where I can collaborate, innovate, and contribute to achieving both individual and organizational success.",
   github: "https://github.com/Deepakkumar586",
   gmail: "aryanrajj1234@gmail.com",
   resume:
@@ -286,4 +286,29 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/Password-Generator",
     webapp: "https://password-generator-one-dun.vercel.app/",
   },
+  {
+    id: 19,
+    title: "Weather App",
+    description:
+      "This responsive Weather App, built with JavaScript and a weather API, provides real-time weather updates. Users can check current conditions for any specified location. The app ensures accurate data and an intuitive user experience. It's designed for seamless performance across all devices.",
+    image:
+      "https://www.techno360.in/wp-content/uploads/2023/10/Lively-Weather-App-Box-Shot.webp",
+    tags: ["HTML", "Javascript", "CSS3"],
+    category: "web app",
+    github: "https://github.com/Deepakkumar586/Weather-App",
+    webapp: "https://weather-app-five-neon-14.vercel.app/",
+  },
+  {
+    id: 19,
+    title: "Rock Paper Scissors",
+    description:
+      "The rock-paper-scissors game offers a classic interactive experience using JavaScript. Players choose between rock, paper, or scissors, with the winner determined by the traditional rules. Rock crushes scissors, scissors cuts paper, and paper covers rock. The game features a simple yet engaging interface. It’s designed for smooth gameplay and easy accessibility.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVXZkxOi44fRmlhOtT93BhsQfe4QZlRsmtg&s",
+    tags: ["HTML", "Javascript", "CSS3"],
+    category: "web app",
+    github: "https://github.com/Deepakkumar586/ScissorsStonePaper",
+    webapp: "https://scissors-stone-paper.vercel.app/",
+  },
+
 ];
