@@ -76,8 +76,8 @@ const Projects = ({ openModal, setOpenModal }) => {
   
         <CardContainer>
           {
-            projects.map((project) => (
-              <ProjectCard
+            projects.map((project,index) => (
+              <ProjectCard key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}

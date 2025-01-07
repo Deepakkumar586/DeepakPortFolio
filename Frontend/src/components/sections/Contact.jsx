@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
-  z-index: 1;
-  align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -15,172 +13,138 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1350px;
-  padding: 40px 20px;
+  max-width: 600px;
   gap: 16px;
 `;
 
 const Title = styled.h1`
-  font-size: 48px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
   color: ${({ theme }) => theme.text_primary};
 `;
 
 const Desc = styled.p`
   font-size: 18px;
   text-align: center;
-  max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
 `;
 
 const ContactForm = styled.form`
-  width: 100%;
-  max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(17, 25, 40, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 12px;
+  width: 100%;
+  background-color: rgba(17, 25, 40, 0.83);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 32px;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  gap: 12px;
+  box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
 `;
 
-const ContactInput = styled.input`
+const Input = styled.input`
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary + 50};
   outline: none;
   font-size: 16px;
   color: ${({ theme }) => theme.text_primary};
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 12px 16px;
   &:focus {
-    border-color: ${({ theme }) => theme.primary};
+    border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
 
-const ContactTextArea = styled.textarea`
+const Textarea = styled.textarea`
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary + 50};
   outline: none;
   font-size: 16px;
   color: ${({ theme }) => theme.text_primary};
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 12px 16px;
   resize: none;
   &:focus {
-    border-color: ${({ theme }) => theme.primary};
+    border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
 
-const ContactButton = styled.button`
-  background: linear-gradient(135deg, #6a5acd, #8a2be2);
-  padding: 12px;
+const Button = styled.input`
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  padding: 12px 16px;
   border-radius: 8px;
   border: none;
   color: white;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
   &:hover {
-    background: linear-gradient(135deg, #8a2be2, #6a5acd);
+    opacity: 0.9;
   }
 `;
 
-const Feedback = styled.div`
-  margin-top: 10px;
-  color: ${({ success }) => (success ? "green" : "red")};
-  font-size: 14px;
-  text-align: center;
-`;
-
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    desc: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [feedback, setFeedback] = useState("");
+  const form = useRef(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setFeedback("");
-    setLoading(true);
 
-    try {
-      const response = await axios.post(
-        "https://deepakportfolio-n7vt.onrender.com/api/user/senddata",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_psby963", // Replace with your actual service ID
+          "template_jb46glb", // Replace with your updated template ID
+          form.current,
+          "dsX8gER4tmz0LnUCU" // Replace with your actual public key
+        )
+        .then(
+          () => {
+            alert("Message sent successfully!");
+            form.current.reset();
           },
-        }
-      );
-
-      setFeedback(response.data.message);
-    } catch (err) {
-      const errorMsg =
-        err.response?.data?.message || "Network error. Please try again.";
-      setFeedback(`Error: ${errorMsg}`);
-    } finally {
-      setLoading(false);
+          (error) => {
+            console.error("Error sending message:", error);
+            alert("Error sending message. Please try again.");
+          }
+        );
     }
   };
 
   return (
     <Container>
       <Wrapper>
-        <Title>Contact</Title>
+        <Title>Contact Me</Title>
         <Desc>Feel free to reach out for any questions or opportunities!</Desc>
-        <ContactForm onSubmit={handleSubmit}>
-          <ContactInput
+        <ContactForm ref={form} onSubmit={handleSubmit}>
+          <Input
             type="text"
-            name="name"
             placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
+            name="from_name"
+            required
           />
-          <ContactInput
+          <Input
             type="email"
-            name="email"
             placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
+            name="email_id"
+            required
           />
-          <ContactInput
+          <Input
             type="text"
-            name="subject"
             placeholder="Subject"
-            value={formData.subject}
-            onChange={handleChange}
+            name="subject"
+            required
           />
-          <ContactTextArea
-            name="desc"
+          <Textarea
             placeholder="Your Message"
-            rows="4"
-            value={formData.desc}
-            onChange={handleChange}
+            name="message"
+            rows="5"
+            required
           />
-          <ContactButton type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Send"}
-          </ContactButton>
+          <Button type="submit" value="Send Message" />
         </ContactForm>
-        {feedback && (
-          <Feedback success={feedback.includes("successfully")}>
-            {feedback}
-          </Feedback>
-        )}
       </Wrapper>
     </Container>
   );
