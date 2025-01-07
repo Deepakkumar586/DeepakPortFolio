@@ -131,12 +131,7 @@ const Contact = () => {
             name="email_id"
             required
           />
-          <Input
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            required
-          />
+          <Input type="text" placeholder="Subject" name="subject" required />
           <Textarea
             placeholder="Your Message"
             name="message"
