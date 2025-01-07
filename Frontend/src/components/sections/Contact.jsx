@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import axios from "axios";  // Importing axios
+import axios from "axios";
 
 const Container = styled.div`
   display: flex;
@@ -117,12 +117,6 @@ const Contact = () => {
     setFeedback("");
     setLoading(true);
 
-    if (!formData.name || !formData.email || !formData.subject || !formData.desc) {
-      setFeedback("All fields are required!");
-      setLoading(false);
-      return;
-    }
-
     try {
       const response = await axios.post(
         "https://deepakportfolio-n7vt.onrender.com/api/user/senddata",
@@ -131,13 +125,14 @@ const Contact = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          withCredentials: true,
         }
       );
-      setFeedback("Message sent successfully!");
+
+      setFeedback(response.data.message);
     } catch (err) {
-      console.error("Axios error:", err);
-      setFeedback("Failed to send the message. Please try again later.");
+      const errorMsg =
+        err.response?.data?.message || "Network error. Please try again.";
+      setFeedback(`Error: ${errorMsg}`);
     } finally {
       setLoading(false);
     }
@@ -147,9 +142,7 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
+        <Desc>Feel free to reach out for any questions or opportunities!</Desc>
         <ContactForm onSubmit={handleSubmit}>
           <ContactInput
             type="text"
@@ -157,7 +150,6 @@ const Contact = () => {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            required
           />
           <ContactInput
             type="email"
@@ -165,7 +157,6 @@ const Contact = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            required
           />
           <ContactInput
             type="text"
@@ -173,7 +164,6 @@ const Contact = () => {
             placeholder="Subject"
             value={formData.subject}
             onChange={handleChange}
-            required
           />
           <ContactTextArea
             name="desc"
@@ -181,7 +171,6 @@ const Contact = () => {
             rows="4"
             value={formData.desc}
             onChange={handleChange}
-            required
           />
           <ContactButton type="submit" disabled={loading}>
             {loading ? "Sending..." : "Send"}

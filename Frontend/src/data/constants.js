@@ -184,7 +184,7 @@ export const projects = [
     description:
       "Developed a fully-responsive talent hive website enabling recruiters to post multiple job listings while allowing students to apply and track the status of their applications. Implemented secure user authentication with email verification and password reset functionality, improving system security by 98%. Integrated Cloudinary for seamless image management and Multer for handling file uploads, ensuring efficient media storage and retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for all devices, achieving a 90% increase in user engagement.",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-SaqEI4tu6oRBSJcflTCKBdpXBkq3wWE6A&s",
+      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fec4ebdff-b37d-4431-9661-724a84f274e2%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20250107%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20250107T095506Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dc3de142014ae7cea32c21e859a9c08066c785cee3a475f2da22ee9bd218abe1b&sign=a74EVRW0ZP3N44Fq3LEU7VoJPNJwMzjZFBF0WvD4TG4",
     tags: [
       "React Js",
       "Shadcn UI",
@@ -226,7 +226,7 @@ export const projects = [
     description:
       "I spearheaded the development of a dynamic blogging platform, enabling users to easily create, update, and delete blogs, complemented by an integrated commenting system. The platform’s responsive UI/UX design played a key role in boosting user retention by 50%. On the backend, I significantly enhanced efficiency by implementing optimized RESTful APIs, streamlining content management processes, and improving the overall user experience by 35%.",
     image:
-      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fb8439058-0846-4ffd-90c7-5792d6a5a65d%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20241231%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20241231T120632Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D44ecf28ebcd268e386f7f3615d57a589e5e08ea54b4806c71050e72b46c5bf7b&sign=rCx9Mb13EJ1ANfAjeg7NZu_VhZvvDq2K744s-C1144I",
+      "https://store-images.s-microsoft.com/image/apps.64965.e0da1dd8-c524-487f-b94f-9b02d7c8331a.ea697d98-a106-4d06-a669-88057e017c3c.9edc979c-f6e1-4652-83a4-f992bc15573c",
     tags: [
       "React Js",
       "MongoDb",
@@ -246,7 +246,7 @@ export const projects = [
     description:
       "I implemented Redux to efficiently manage the application state, ensuring real-time updates of cart items across the platform while reducing page load time by 20%. I manually tested the cart management functionalities, including item addition, quantity adjustments, and removal, ensuring a seamless user experience and error-free operations. This led to a 30% reduction in customer complaints.",
     image:
-      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F61f46599-7eaa-411f-bd65-ef53566e6d26%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20241231%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20241231T121236Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Deacab1b8a85ce1c8e625a0cda28794f84759eccc9ff9d122303ada8b7da75747&sign=RdIV5tOobas-fzR9OmsOVp9ci_xX5BW0j_ItvGcH_Tc",
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Ful04d5bvc6sq45ea9x94.png",
     tags: ["React Js", "Javascript", "React-Redux", "CSS3"],
     category: "web app",
     github: "https://github.com/Deepakkumar586/Shopping-cart-",
@@ -258,7 +258,7 @@ export const projects = [
     description:
       "I leveraged Redux to streamline the management of application state, ensuring consistent, real-time updates of cart items across the platform and reducing page load time by 20%. Through comprehensive manual testing of cart functionalities, including adding items, adjusting quantities, and removing products, I ensured a smooth and error-free user experience. As a result, customer complaints decreased by 30%, reflecting the significant improvements in the platform’s performance and usability.",
     image:
-      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fabd1db23-84c2-4848-a250-9092dabcaacb%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20241231%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20241231T121625Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dfaea7fa8cbf0af79c14cba9461b26751e810540863ca04f96d70ba47e9057094&sign=d_YMBseBzcWlHZQXxB4M8P7WbxcuspdZ5juHB7EhFRM",
+      "https://media.licdn.com/dms/image/v2/D4D22AQEGzu2H3WMzlw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1710953825625?e=2147483647&v=beta&t=T7JuJLUX5MfShu7HOnBtNwWW9sdMdxQLpPU91MCHh-4",
     tags: ["React Js", "Javascript", "CSS3"],
     category: "web app",
     github: "https://github.com/Deepakkumar586/Password-Generator",

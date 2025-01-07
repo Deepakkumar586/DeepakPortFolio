@@ -10,16 +10,13 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://deepakportfolio-n7vt.onrender.com", // Ensure this is correct
+    origin: ["http://localhost:8080","https://deepakportfolio-n7vt.onrender.com"], // Update this to your frontend port
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
   })
 );
 
-// Middleware to parse JSON bodies
 app.use(express.json());
-
-// User API
 app.use("/api/user", userRouter);
 
 // Serve static files from the 'Frontend/build' directory
@@ -33,5 +30,5 @@ app.get("*", (req, res) => {
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   connectDb();
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
