@@ -206,7 +206,7 @@ export const projects = [
     description:
       "Developed a fully-responsive talent hive website enabling recruiters to post multiple job listings while allowing students to apply and track the status of their applications. Implemented secure user authentication with email verification and password reset functionality, improving system security by 98%. Integrated Cloudinary for seamless image management and Multer for handling file uploads, ensuring efficient media storage and retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for all devices, achieving a 90% increase in user engagement.",
     image:
-      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fec4ebdff-b37d-4431-9661-724a84f274e2%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20250107%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20250107T095506Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dc3de142014ae7cea32c21e859a9c08066c785cee3a475f2da22ee9bd218abe1b&sign=a74EVRW0ZP3N44Fq3LEU7VoJPNJwMzjZFBF0WvD4TG4",
+      "https://s3-ap-south-1.amazonaws.com/internshala-blog/wp-content/uploads/2023/12/Best-Remote-Job-Sites-1024x427.jpg.webp",
     tags: [
       "React Js",
       "Shadcn UI",
