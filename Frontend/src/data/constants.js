@@ -236,6 +236,7 @@ export const projects = [
       "React Redux",
       "Tailwind CSS",
       "Mongo DB",
+      "DaisyUi",
       "Express Js",
       "AWS EC2",
       "Nginx",
