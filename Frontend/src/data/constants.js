@@ -206,7 +206,7 @@ export const projects = [
     description:
       "Developed a fully-responsive talent hive website enabling recruiters to post multiple job listings while allowing students to apply and track the status of their applications. Implemented secure user authentication with email verification and password reset functionality, improving system security by 98%. Integrated Cloudinary for seamless image management and Multer for handling file uploads, ensuring efficient media storage and retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for all devices, achieving a 90% increase in user engagement.",
     image:
-      "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fec4ebdff-b37d-4431-9661-724a84f274e2%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q6TT7CKDU%252F20250107%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20250107T095506Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Dc3de142014ae7cea32c21e859a9c08066c785cee3a475f2da22ee9bd218abe1b&sign=a74EVRW0ZP3N44Fq3LEU7VoJPNJwMzjZFBF0WvD4TG4",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRikPPJxD5TTD4V3sSzTW_iS2awanS-WyDgVA&s",
     tags: [
       "React Js",
       "Shadcn UI",
@@ -223,6 +223,29 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://talenthive-kkxx.onrender.com/",
   },
+  {
+    id: 11,
+    title: "Tinder",
+    description:
+      "I have developed a Tinder-like website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
+    image:
+      "https://i.cdn.newsbytesapp.com/images/l21120240927150023.jpeg",
+    tags: [
+      "React Js",
+      "Node.js",
+      "React Redux",
+      "Tailwind CSS",
+      "Mongo DB",
+      "Express Js",
+      "AWS EC2",
+      "Nginx",
+      "pm2"
+    ],
+    category: "web app",
+    github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
+    webapp: "http://51.20.82.159/",
+  },
+
   {
     id: 12,
     title: "Study Notion",
