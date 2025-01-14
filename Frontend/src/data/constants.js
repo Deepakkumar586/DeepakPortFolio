@@ -225,9 +225,9 @@ export const projects = [
   },
   {
     id: 11,
-    title: "Tinder",
+    title: "SocialSparks",
     description:
-      "I have developed a Tinder-like website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
+      "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
     image:
       "https://i.cdn.newsbytesapp.com/images/l21120240927150023.jpeg",
     tags: [
