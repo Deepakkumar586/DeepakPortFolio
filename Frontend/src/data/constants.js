@@ -13,7 +13,6 @@ export const Bio = {
 };
 
 export const skills = [
-
   {
     title: "Languages",
     skills: [
@@ -79,8 +78,7 @@ export const skills = [
       },
       {
         name: "Node.js",
-        image:
-          "https://nodejs.org/static/images/logo.svg",
+        image: "https://nodejs.org/static/images/logo.svg",
       },
       {
         name: "Express Js",
@@ -89,20 +87,21 @@ export const skills = [
       },
     ],
   },
-  
+
   {
-   title:"Databases",
-   skills:[
-    {
-      name:"MongoDb",
-      image:"https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-    },
-    {
-      name: "MySQL",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-    },
-   ]
+    title: "Databases",
+    skills: [
+      {
+        name: "MongoDb",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+      {
+        name: "MySQL",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+    ],
   },
 
   {
@@ -150,6 +149,24 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://raw.githubusercontent.com/anshita005/My-Portfolio/main/alfabeto.png",
+    role: " Front-End Developer Executive",
+    company: "Maisha Infotech Pvt. Ltd",
+    date: "February 2025 - present",
+    desc: "Worked on multiple assignments and projects including HolyHotels, Wingz4U, OrkoAdvanceLearning, Swafe Wellness, and UniqueVarsity, actively participating in client meetings to gather requirements and align deliverables. Created professional, responsive landing pages and user-interactive platforms that enhanced accessibility, improved engagement by 95%, and achieved 100% client satisfaction.",
+    skills: [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Gsap",
+      "Bootstrap",
+      "Tailwind CSS",
+    ],
+    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+  },
+  {
+    id: 1,
     img: "https://raw.githubusercontent.com/anshita005/My-Portfolio/main/alfabeto.png",
     role: "Frontend Developer Intern",
     company: "Technohacks",
@@ -200,11 +217,71 @@ export const education = [
 ];
 
 export const projects = [
+   {
+    id: 11,
+    title: "HolyHotels",
+    description:
+      "HolyHotels is a responsive hotel booking platform showcasing a wide range of hotels, apartments, villas, and resorts. The platform focuses on delivering a seamless user experience through intuitive navigation, interactive landing pages, and mobile-first design. Users can explore detailed listings, filter accommodations, and engage with visually appealing, user-friendly interfaces. The project was developed with a strong emphasis on responsiveness, accessibility, and client-focused features, ensuring improved user engagement and a smooth booking journey.",
+    image:
+      "image.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      "Gsap",
+
+      
+    ],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/TalentHive",
+    webapp: "https://www.holyhotels.in/",
+  },
+   {
+    id: 11,
+    title: "Swafe Wellness",
+    description:
+      "Swafe Wellness is a premier health spa and wellness center platform designed to promote relaxation, rejuvenation, and holistic well-being. The project emphasizes a user-friendly, responsive design with engaging landing pages that showcase services, treatments, and wellness programs. Built with a professional and client-focused approach, the platform enhances accessibility, improves user interaction, and delivers a seamless digital experience aligned with the brand’s mission of nourishing both body and soul.",
+    image:
+      "swafewellness.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      "Gsap",
+
+      
+    ],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/TalentHive",
+    webapp: "https://swafewellness.com/",
+  },
+   {
+    id: 11,
+    title: "Wingz4U",
+    description:
+      "Wingz4U is a responsive logistics and delivery platform designed to simplify transportation for individuals and businesses. The project delivers an interactive, user-friendly website showcasing reliable porter and logistics services, achieving a 95% improvement in user engagement and 100% mobile compatibility. With optimized landing pages and client-focused content, the platform enhanced accessibility, streamlined booking processes, and increased service inquiries by 80%, establishing Wingz4U as a trusted partner for safe, fast, and seamless movement.",
+    image:
+      "wingz4u.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      "Gsap",
+
+      
+    ],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/TalentHive",
+    webapp: "https://swafewellness.com/",
+  },
   {
     id: 11,
     title: "Talent Hive",
     description:
-      "Developed a fully-responsive talent hive website enabling recruiters to post multiple job listings while allowing students to apply and track the status of their applications. Implemented secure user authentication with email verification and password reset functionality, improving system security by 98%. Integrated Cloudinary for seamless image management and Multer for handling file uploads, ensuring efficient media storage and retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for all devices, achieving a 90% increase in user engagement.",
+      "Developed a fully-responsive talent hive website enabling recruiters to post multiple  job listings while allowing students to apply and track the status of their applications.  Implemented secure user authentication with email verification and password reset  functionality, improving system security by 98%. Integrated Cloudinary for seamless image  management and Multer for handling file uploads, ensuring efficient media storage and  retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for   all devices, achieving a 90% increase in user engagement.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRikPPJxD5TTD4V3sSzTW_iS2awanS-WyDgVA&s",
     tags: [
@@ -240,7 +317,7 @@ export const projects = [
       "Express Js",
       "AWS EC2",
       "Nginx",
-      "pm2"
+      "pm2",
     ],
     category: "web app",
     github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
@@ -265,6 +342,23 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Deepakkumar586/Study",
     webapp: "https://studyhub-chi.vercel.app/",
+  },
+  {
+    id: 12,
+    title: "Jubliexx",
+    description:
+      "Jubliexx is a next-generation digital hub combining immersive streaming with dynamic live interactions to transform how India consumes and creates content. The platform integrates two unique experiences—Jubliexx OTT, offering a seamless ad-free space for trending shows, films, and originals, and Jubliexx Live, enabling creators to perform, connect, and grow their audience in real time. Designed with a responsive, user-centric interface and engaging interactive features, the project boosted content engagement by 90%, improved streaming efficiency by 85%, and enhanced creator-audience interactions by 100%.",
+    image:
+      "Jubliexx.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+    ],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/Study",
+    webapp: "https://jubliexx.com/",
   },
   {
     id: 9,
@@ -312,15 +406,15 @@ export const projects = [
   },
   {
     id: 19,
-    title: "Weather App",
+    title: "Consta Marine",
     description:
-      "This responsive Weather App, built with JavaScript and a weather API, provides real-time weather updates. Users can check current conditions for any specified location. The app ensures accurate data and an intuitive user experience. It's designed for seamless performance across all devices.",
+      "ContsaMarine is a responsive and visually engaging platform dedicated to aquatic life, aquariums, and marine aquascaping. Designed with modern UI/UX principles, the website showcases breathtaking underwater concepts and interactive galleries, enhancing user engagement by 90% and improving accessibility across all devices. Despite being a fresh entrant in the UAE’s aquascaping industry, the platform highlights a passion for innovation and delivers a professional, client-focused digital experience that inspires marine enthusiasts and customers alike.",
     image:
-      "https://www.techno360.in/wp-content/uploads/2023/10/Lively-Weather-App-Box-Shot.webp",
+      "constamarine.png",
     tags: ["HTML", "Javascript", "CSS3"],
     category: "web app",
-    github: "https://github.com/Deepakkumar586/Weather-App",
-    webapp: "https://weather-app-five-neon-14.vercel.app/",
+    // github: "https://github.com/Deepakkumar586/Weather-App",
+    webapp: "https://constamarine.com/",
   },
   {
     id: 19,
@@ -334,5 +428,4 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/ScissorsStonePaper",
     webapp: "https://scissors-stone-paper.vercel.app/",
   },
-
 ];
