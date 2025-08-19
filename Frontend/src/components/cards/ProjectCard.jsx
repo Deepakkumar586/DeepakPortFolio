@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 520px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -12,6 +12,7 @@ const Card = styled.div`
   padding: 26px 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 14px;
   transition: all 0.5s ease-in-out;
   &:hover {
@@ -20,6 +21,7 @@ const Card = styled.div`
     filter: brightness(1.1);
   }
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 180px;
@@ -27,6 +29,7 @@ const Image = styled.img`
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
+
 const Tags = styled.div`
   width: 100%;
   display: flex;
@@ -59,7 +62,6 @@ const Title = styled.div`
   max-width: 100%;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   text-overflow: ellipsis;
 `;
 const Date = styled.div`
@@ -97,25 +99,75 @@ const Avatar = styled.img`
   border: 3px solid ${({ theme }) => theme.card};
 `;
 
+/* 🔹 Button Container */
+const ButtonGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+`;
+
+/* 🔹 Shared button style */
+const Button = styled.a`
+  flex: 1;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: #fff;
+
+  ${({ variant, theme }) =>
+    variant === "code"
+      ? `
+    background-color: ${theme.primary};
+    &:hover { background-color: #000; }
+  `
+      : `
+    background-color: #007bff;
+    &:hover { background-color: #0056b3; }
+  `}
+`;
+
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project?.image} />
-      <Tags>
-        {project.tags?.map((tag, index) => (
-          <Tag key={index}>{tag}</Tag>
-        ))}
-      </Tags>
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details>
-      <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
-        ))}
-      </Members>
+      <div>
+        <Image src={project?.image} />
+        <Tags>
+          {project.tags?.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </Tags>
+        <Details>
+          <Title>{project.title}</Title>
+          <Date>{project.date}</Date>
+          <Description>{project.description}</Description>
+        </Details>
+        <Members>
+          {project.member?.map((member, i) => (
+            <Avatar key={i} src={member.img} />
+          ))}
+        </Members>
+      </div>
+
+      {/* 🔹 Show buttons only if links exist */}
+      {(project.github || project.demo) && (
+        <ButtonGroup onClick={(e) => e.stopPropagation()}>
+          {project.github && (
+            <Button href={project.github} target="_blank" variant="code">
+              View Code
+            </Button>
+          )}
+          {project.demo && (
+            <Button href={project.webapp} target="_blank" variant="demo">
+              Live Demo
+            </Button>
+          )}
+        </ButtonGroup>
+      )}
     </Card>
   );
 };

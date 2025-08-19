@@ -220,6 +220,7 @@ export const projects = [
    {
     id: 11,
     title: "HolyHotels",
+     type: "company", 
     description:
       "HolyHotels is a responsive hotel booking platform showcasing a wide range of hotels, apartments, villas, and resorts. The platform focuses on delivering a seamless user experience through intuitive navigation, interactive landing pages, and mobile-first design. Users can explore detailed listings, filter accommodations, and engage with visually appealing, user-friendly interfaces. The project was developed with a strong emphasis on responsiveness, accessibility, and client-focused features, ensuring improved user engagement and a smooth booking journey.",
     image:
@@ -240,6 +241,7 @@ export const projects = [
    {
     id: 11,
     title: "Swafe Wellness",
+      type: "company",
     description:
       "Swafe Wellness is a premier health spa and wellness center platform designed to promote relaxation, rejuvenation, and holistic well-being. The project emphasizes a user-friendly, responsive design with engaging landing pages that showcase services, treatments, and wellness programs. Built with a professional and client-focused approach, the platform enhances accessibility, improves user interaction, and delivers a seamless digital experience aligned with the brand’s mission of nourishing both body and soul.",
     image:
@@ -260,6 +262,8 @@ export const projects = [
    {
     id: 11,
     title: "Wingz4U",
+
+      type: "company",
     description:
       "Wingz4U is a responsive logistics and delivery platform designed to simplify transportation for individuals and businesses. The project delivers an interactive, user-friendly website showcasing reliable porter and logistics services, achieving a 95% improvement in user engagement and 100% mobile compatibility. With optimized landing pages and client-focused content, the platform enhanced accessibility, streamlined booking processes, and increased service inquiries by 80%, establishing Wingz4U as a trusted partner for safe, fast, and seamless movement.",
     image:
@@ -280,6 +284,7 @@ export const projects = [
   {
     id: 11,
     title: "Talent Hive",
+    type: "personal",
     description:
       "Developed a fully-responsive talent hive website enabling recruiters to post multiple  job listings while allowing students to apply and track the status of their applications.  Implemented secure user authentication with email verification and password reset  functionality, improving system security by 98%. Integrated Cloudinary for seamless image  management and Multer for handling file uploads, ensuring efficient media storage and  retrieval. Focused on creating a user-friendly experience with enhanced UX/UI, optimized for   all devices, achieving a 90% increase in user engagement.",
     image:
@@ -303,6 +308,7 @@ export const projects = [
   {
     id: 11,
     title: "SocialSparks",
+    type: "personal",
     description:
       "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
     image:
@@ -327,6 +333,7 @@ export const projects = [
   {
     id: 12,
     title: "Study Notion",
+    type: "personal",
     description:
       "User has engineered an e-learning platform featuring seamless course purchases via Razorpay API with 100% transaction reliability, enhancing user confidence and platform credibility. They pioneered the development of secure RESTful APIs, defining complete authentication workflows with email verification via OTP, password reset, and Cloudinary integration for secure image storage. User enhanced the UI/UX design, creating a fully responsive interface across devices, and introduced visual dashboards with pie charts for recruiters to track course analytics effectively.",
     image:
@@ -346,6 +353,7 @@ export const projects = [
   {
     id: 12,
     title: "Jubliexx",
+    type: "company",
     description:
       "Jubliexx is a next-generation digital hub combining immersive streaming with dynamic live interactions to transform how India consumes and creates content. The platform integrates two unique experiences—Jubliexx OTT, offering a seamless ad-free space for trending shows, films, and originals, and Jubliexx Live, enabling creators to perform, connect, and grow their audience in real time. Designed with a responsive, user-centric interface and engaging interactive features, the project boosted content engagement by 90%, improved streaming efficiency by 85%, and enhanced creator-audience interactions by 100%.",
     image:
@@ -363,6 +371,7 @@ export const projects = [
   {
     id: 9,
     title: "Inshits Hub",
+    type: "personal",
     description:
       "I spearheaded the development of a dynamic blogging platform, enabling users to easily create, update, and delete blogs, complemented by an integrated commenting system. The platform’s responsive UI/UX design played a key role in boosting user retention by 50%. On the backend, I significantly enhanced efficiency by implementing optimized RESTful APIs, streamlining content management processes, and improving the overall user experience by 35%.",
     image:
@@ -383,6 +392,7 @@ export const projects = [
   {
     id: 0,
     title: "Shopping Cart",
+    type: "personal",
     description:
       "I implemented Redux to efficiently manage the application state, ensuring real-time updates of cart items across the platform while reducing page load time by 20%. I manually tested the cart management functionalities, including item addition, quantity adjustments, and removal, ensuring a seamless user experience and error-free operations. This led to a 30% reduction in customer complaints.",
     image:
@@ -395,6 +405,7 @@ export const projects = [
   {
     id: 5,
     title: "Random Password Generator",
+    type: "personal",
     description:
       "I leveraged Redux to streamline the management of application state, ensuring consistent, real-time updates of cart items across the platform and reducing page load time by 20%. Through comprehensive manual testing of cart functionalities, including adding items, adjusting quantities, and removing products, I ensured a smooth and error-free user experience. As a result, customer complaints decreased by 30%, reflecting the significant improvements in the platform’s performance and usability.",
     image:
@@ -407,6 +418,7 @@ export const projects = [
   {
     id: 19,
     title: "Consta Marine",
+    type: "company",
     description:
       "ContsaMarine is a responsive and visually engaging platform dedicated to aquatic life, aquariums, and marine aquascaping. Designed with modern UI/UX principles, the website showcases breathtaking underwater concepts and interactive galleries, enhancing user engagement by 90% and improving accessibility across all devices. Despite being a fresh entrant in the UAE’s aquascaping industry, the platform highlights a passion for innovation and delivers a professional, client-focused digital experience that inspires marine enthusiasts and customers alike.",
     image:
@@ -419,6 +431,7 @@ export const projects = [
   {
     id: 19,
     title: "Rock Paper Scissors",
+    type: "personal",
     description:
       "The rock-paper-scissors game offers a classic interactive experience using JavaScript. Players choose between rock, paper, or scissors, with the winner determined by the traditional rules. Rock crushes scissors, scissors cuts paper, and paper covers rock. The game features a simple yet engaging interface. It’s designed for smooth gameplay and easy accessibility.",
     image:
