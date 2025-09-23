@@ -11,10 +11,11 @@ const Top = styled.div`
 `;
 
 const Image = styled.img`
-  height: 180px; /* Increased image size */
-  width: 180px; /* Ensures the image is a square */
+  height: 180px !important; /* Increased image size */
+  width: 180px !important; /* Ensures the image is a square */
   border-radius:100%; /* Slightly larger radius for rounded corners */
   margin-top: 4px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 
   &:hover {

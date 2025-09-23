@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 520px;
+  height: 562px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -80,7 +80,7 @@ const Description = styled.div`
   margin-top: 8px;
   display: -webkit-box;
   max-width: 100%;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
@@ -126,14 +126,14 @@ const Button = styled.a`
     &:hover { background-color: #000; }
   `
       : `
-    background-color: #007bff;
-    &:hover { background-color: #0056b3; }
+    background-color: #854CE6;
+    &:hover { background-color: #854CE6; }
   `}
 `;
 
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
+    <Card>
       <div>
         <Image src={project?.image} />
         <Tags>
@@ -154,22 +154,28 @@ const ProjectCard = ({ project, setOpenModal }) => {
       </div>
 
       {/* 🔹 Show buttons only if links exist */}
-      {(project.github || project.demo) && (
-        <ButtonGroup onClick={(e) => e.stopPropagation()}>
-          {project.github && (
-            <Button href={project.github} target="_blank" variant="code">
-              View Code
-            </Button>
-          )}
-          {project.demo && (
-            <Button href={project.webapp} target="_blank" variant="demo">
-              Live Demo
-            </Button>
-          )}
-        </ButtonGroup>
-      )}
+      <ButtonGroup onClick={(e) => e.stopPropagation()}>
+        {/* {project.github && (
+          <Button href={project.github} target="_blank" variant="code">
+            View Code
+          </Button>
+        )} */}
+        {project.webapp && (
+          <Button href={project.webapp} target="_blank" variant="demo">
+            Live Demo
+          </Button>
+        )}
+        {/* 🔹 New See Details button */}
+        <Button
+          onClick={() => setOpenModal({ state: true, project: project })}
+          variant="details"
+        >
+          See Details
+        </Button>
+      </ButtonGroup>
     </Card>
   );
 };
+
 
 export default ProjectCard;

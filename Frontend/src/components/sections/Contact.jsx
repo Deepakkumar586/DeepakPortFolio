@@ -95,10 +95,10 @@ const Contact = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_psby963", // Replace with your actual service ID
+          "service_inn2nvr", // Replace with your actual service ID
           "template_jb46glb", // Replace with your updated template ID
           form.current,
-          "dsX8gER4tmz0LnUCU" // Replace with your actual public key
+          "1YZkGhfc--Ub1Q_T0" // Replace with your actual public key
         )
         .then(
           () => {

@@ -2,9 +2,9 @@ import TalentHive from "../images/TalentHive.png";
 
 export const Bio = {
   name: "Deepak Kumar",
-  roles: ["Full Stack Developer", "Frontend Developer", "Backend Developer"],
+  roles: ["Frontend Developer",],
   description:
-    "I am a highly motivated and versatile professional with a deep passion for solving complex problems and driving meaningful change. With a knack for leveraging data insights and innovative thinking, I excel at crafting solutions that deliver impact and value. My dedication to lifelong learning fuels my commitment to continuous growth, enabling me to adapt to new challenges and expand my expertise. I thrive in dynamic environments where I can collaborate, innovate, and contribute to achieving both individual and organizational success.",
+    "I am a highly motivated professional with experience as a Frontend Developer at Maisha Infotech, where I contributed to building responsive, scalable, and user-friendly applications. With strong expertise in the MERN stack, I specialize in creating seamless web solutions that blend functionality with great user experience. My problem-solving mindset, ability to adapt to dynamic challenges, and dedication to continuous learning allow me to deliver impactful solutions and drive innovation in every project I take on.",
   github: "https://github.com/Deepakkumar586",
   gmail: "aryanrajj1234@gmail.com",
   resume:
@@ -32,11 +32,11 @@ export const skills = [
         image:
           "https://w7.pngwing.com/pngs/167/148/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-database-blue-text-logo-thumbnail.png",
       },
-      {
-        name: "TypeScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
-      },
+      // {
+      //   name: "TypeScript",
+      //   image:
+      //     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+      // },
       {
         name: "Python",
         image:
@@ -207,7 +207,7 @@ export const education = [
   },
   {
     id: 19,
-    img: "https://www.admissioncare.co.in/Admin_Pannel/listing-images/20cbc91d8af72b419fa4d240024e04df.screenshot%20(130).png",
+    img: "https://content3.jdmagicbox.com/comp/unnao/n3/9999p5152.5152.170612123619.j8n3/catalogue/prakash-mahavidyalaya-barauna-mallawan-hardoi-unnao-d3plg37scd.jpg",
     school: "Prakash Mahavidyalaya",
     date: "Aug 2018 - Sept 2021",
     percentage: " 77% ",
@@ -279,7 +279,29 @@ export const projects = [
     ],
     category: "web app",
     // github: "https://github.com/Deepakkumar586/TalentHive",
-    webapp: "https://swafewellness.com/",
+    webapp: "https://wingz4u.com/",
+  },
+   {
+    id: 11,
+    title: "77pillars",
+
+      type: "company",
+    description:
+      "77 Pillar is a trusted real estate company offering premium residential and commercial properties. I worked on this project by designing the UI and implementing the frontend, creating a responsive, visually appealing, and user-friendly interface. The platform enables seamless property browsing, detail views, and interactive navigation across devices, enhancing overall user experience.",
+    image:
+      "77pillar.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      
+
+      
+    ],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/TalentHive",
+    webapp: "https://77pillar.com/",
   },
   {
     id: 11,
@@ -305,30 +327,7 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://talenthive-kkxx.onrender.com/",
   },
-  {
-    id: 11,
-    title: "SocialSparks",
-    type: "personal",
-    description:
-      "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPirY7lTkNQHkQfy1Sus-A1pUjCqMbMhUDsg&s",
-    tags: [
-      "React Js",
-      "Node.js",
-      "React Redux",
-      "Tailwind CSS",
-      "Mongo DB",
-      "DaisyUi",
-      "Express Js",
-      "AWS EC2",
-      "Nginx",
-      "pm2",
-    ],
-    category: "web app",
-    github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
-    webapp: "http://51.20.82.159/",
-  },
+  
 
   {
     id: 12,
@@ -390,6 +389,30 @@ export const projects = [
     webapp: "https://blogs-19nw.onrender.com/",
   },
   {
+    id: 11,
+    title: "SocialSparks",
+    type: "personal",
+    description:
+      "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPirY7lTkNQHkQfy1Sus-A1pUjCqMbMhUDsg&s",
+    tags: [
+      "React Js",
+      "Node.js",
+      "React Redux",
+      "Tailwind CSS",
+      "Mongo DB",
+      "DaisyUi",
+      "Express Js",
+      "AWS EC2",
+      "Nginx",
+      "pm2",
+    ],
+    category: "web app",
+    github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
+    webapp: "http://51.20.82.159/",
+  },
+  {
     id: 0,
     title: "Shopping Cart",
     type: "personal",
@@ -427,6 +450,19 @@ export const projects = [
     category: "web app",
     // github: "https://github.com/Deepakkumar586/Weather-App",
     webapp: "https://constamarine.com/",
+  },
+  {
+    id: 20,
+    title: "SpeedLoad",
+    type: "company",
+    description:
+      "Speed Load is India’s trusted delivery partner, offering fast, secure, and affordable courier & transport services. With nationwide coverage and real-time tracking, we make shipping simple, reliable, and hassle-free. Our landing page showcases key features, customer benefits, and an easy call-to-action for users to download the app and start shipping instantly.",
+    image:
+      "speedload.png",
+    tags: ["HTML", "Javascript", "CSS3"],
+    category: "web app",
+    // github: "https://github.com/Deepakkumar586/Weather-App",
+    webapp: "https://speedload.in/",
   },
   {
     id: 19,
