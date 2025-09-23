@@ -155,11 +155,12 @@ export const experiences = [
     date: "December 2024 - present",
     desc: "Worked on multiple assignments and projects including HolyHotels, Wingz4U, OrkoAdvanceLearning, Swafe Wellness, and UniqueVarsity, actively participating in client meetings to gather requirements and align deliverables. Created professional, responsive landing pages and user-interactive platforms that enhanced accessibility, improved engagement by 95%, and achieved 100% client satisfaction.",
     skills: [
-      "ReactJS",
+     
       "HTML",
       "CSS",
       "JavaScript",
       "Gsap",
+       "ReactJS",
       "Bootstrap",
       "Tailwind CSS",
     ],
