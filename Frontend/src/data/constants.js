@@ -8,7 +8,7 @@ export const Bio = {
   github: "https://github.com/Deepakkumar586",
   gmail: "aryanrajj1234@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1UDP_ZfdfwkDyy6RzQYMNXrJkQA1Qjk_3/view?usp=sharing",
+    "https://drive.google.com/file/d/1Pq0m33p15jSQlUr9ifs1RtcEiurDDIQV/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/deepak-kumar-41bab6221/",
 };
 
