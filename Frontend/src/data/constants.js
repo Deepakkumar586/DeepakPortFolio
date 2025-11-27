@@ -220,10 +220,10 @@ export const education = [
 export const projects = [
    {
     id: 11,
-    title: "HolyHotels",
+    title: "Hotel Booking Web Platform",
      type: "company", 
     description:
-      "HolyHotels is a responsive hotel booking platform showcasing a wide range of hotels, apartments, villas, and resorts. The platform focuses on delivering a seamless user experience through intuitive navigation, interactive landing pages, and mobile-first design. Users can explore detailed listings, filter accommodations, and engage with visually appealing, user-friendly interfaces. The project was developed with a strong emphasis on responsiveness, accessibility, and client-focused features, ensuring improved user engagement and a smooth booking journey.",
+      "This project is a fully responsive hotel booking platform designed to showcase a diverse range of stays, including hotels, apartments, villas, and resorts. The platform emphasizes a smooth and intuitive user experience through clean navigation, interactive landing sections, and a mobile-first UI design.Users can explore detailed property listings, apply filters, and interact with visually engaging, user-friendly interfaces. The system is built with a strong focus on responsiveness, accessibility, and client-centric functionality, ensuring enhanced user engagement and a seamless booking journey from start to finish.",
     image:
       "image.png",
     tags: [
@@ -241,10 +241,10 @@ export const projects = [
   },
    {
     id: 11,
-    title: "Swafe Wellness",
+    title: "Wellness Therapy Interface Project",
       type: "company",
     description:
-      "Swafe Wellness is a premier health spa and wellness center platform designed to promote relaxation, rejuvenation, and holistic well-being. The project emphasizes a user-friendly, responsive design with engaging landing pages that showcase services, treatments, and wellness programs. Built with a professional and client-focused approach, the platform enhances accessibility, improves user interaction, and delivers a seamless digital experience aligned with the brand’s mission of nourishing both body and soul.",
+      "A holistic wellness and therapy platform designed to promote relaxation, rejuvenation, and balanced living through a calming, user-focused digital experience. The platform showcases a variety of therapeutic services that help reduce stress, boost energy, and support overall physical and mental well-being. It emphasizes mindful lifestyle practices that counter fatigue, inflammation, and common lifestyle-related challenges while encouraging a healthier, more harmonious daily routine. With a soothing visual design, clear content flow, and accessible UI elements, the platform serves as a peaceful digital space that inspires long-term wellness and mindful living.",
     image:
       "swafewellness.png",
     tags: [
@@ -262,11 +262,11 @@ export const projects = [
   },
    {
     id: 11,
-    title: "Wingz4U",
+    title: "Logistics Delivery Website",
 
       type: "company",
     description:
-      "Wingz4U is a responsive logistics and delivery platform designed to simplify transportation for individuals and businesses. The project delivers an interactive, user-friendly website showcasing reliable porter and logistics services, achieving a 95% improvement in user engagement and 100% mobile compatibility. With optimized landing pages and client-focused content, the platform enhanced accessibility, streamlined booking processes, and increased service inquiries by 80%, establishing Wingz4U as a trusted partner for safe, fast, and seamless movement.",
+      "A responsive logistics and delivery platform simplifying international and domestic transportation for individuals and businesses. It offers a user-friendly web experience with optimized landing pages, streamlined booking flows, and clear service information, improving user engagement, accessibility, and mobile compatibility. Focused on clarity, efficiency, and trust, the platform enhances client interactions and ensures safe, fast, and seamless delivery solutions.",
     image:
       "wingz4u.png",
     tags: [
@@ -284,11 +284,11 @@ export const projects = [
   },
    {
     id: 11,
-    title: "77pillars",
+    title: "Real Estate Platform",
 
       type: "company",
     description:
-      "77 Pillar is a trusted real estate company offering premium residential and commercial properties. I worked on this project by designing the UI and implementing the frontend, creating a responsive, visually appealing, and user-friendly interface. The platform enables seamless property browsing, detail views, and interactive navigation across devices, enhancing overall user experience.",
+      "A trusted real estate platform showcasing premium residential and commercial properties. Responsible for designing the UI and implementing the frontend, creating a responsive, visually appealing, and user-friendly interface. The platform enables seamless property browsing, detailed views, and interactive navigation across devices, enhancing overall user experience and engagement.",
     image:
       "77pillar.png",
     tags: [
@@ -350,24 +350,24 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/Study",
     webapp: "https://studyhub-chi.vercel.app/",
   },
-  {
-    id: 12,
-    title: "Jubliexx",
-    type: "company",
-    description:
-      "Jubliexx is a next-generation digital hub combining immersive streaming with dynamic live interactions to transform how India consumes and creates content. The platform integrates two unique experiences—Jubliexx OTT, offering a seamless ad-free space for trending shows, films, and originals, and Jubliexx Live, enabling creators to perform, connect, and grow their audience in real time. Designed with a responsive, user-centric interface and engaging interactive features, the project boosted content engagement by 90%, improved streaming efficiency by 85%, and enhanced creator-audience interactions by 100%.",
-    image:
-      "Jubliexx.png",
-    tags: [
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "Javascript",
-    ],
-    category: "web app",
-    // github: "https://github.com/Deepakkumar586/Study",
-    webapp: "https://jubliexx.com/",
-  },
+  // {
+  //   id: 12,
+  //   title: "Jubliexx",
+  //   type: "company",
+  //   description:
+  //     "Jubliexx is a next-generation digital hub combining immersive streaming with dynamic live interactions to transform how India consumes and creates content. The platform integrates two unique experiences—Jubliexx OTT, offering a seamless ad-free space for trending shows, films, and originals, and Jubliexx Live, enabling creators to perform, connect, and grow their audience in real time. Designed with a responsive, user-centric interface and engaging interactive features, the project boosted content engagement by 90%, improved streaming efficiency by 85%, and enhanced creator-audience interactions by 100%.",
+  //   image:
+  //     "Jubliexx.png",
+  //   tags: [
+  //     "HTML",
+  //     "CSS",
+  //     "Bootstrap",
+  //     "Javascript",
+  //   ],
+  //   category: "web app",
+  //   // github: "https://github.com/Deepakkumar586/Study",
+  //   webapp: "https://jubliexx.com/",
+  // },
   {
     id: 9,
     title: "Inshits Hub",
@@ -389,30 +389,30 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/BLOGS",
     webapp: "https://blogs-19nw.onrender.com/",
   },
-  {
-    id: 11,
-    title: "SocialSparks",
-    type: "personal",
-    description:
-      "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPirY7lTkNQHkQfy1Sus-A1pUjCqMbMhUDsg&s",
-    tags: [
-      "React Js",
-      "Node.js",
-      "React Redux",
-      "Tailwind CSS",
-      "Mongo DB",
-      "DaisyUi",
-      "Express Js",
-      "AWS EC2",
-      "Nginx",
-      "pm2",
-    ],
-    category: "web app",
-    github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
-    webapp: "http://51.20.82.159/",
-  },
+  // {
+  //   id: 11,
+  //   title: "SocialSparks",
+  //   type: "personal",
+  //   description:
+  //     "I have developed a SocialSparks website featuring robust user authentication, including login and password recovery via mail verification. This platform allows users to send and accept friend connections, track their total friends, and enjoy a seamless social experience. The application is deployed on AWS EC2, ensuring high availability and scalability, with PM2 managing the backend processes for consistent uptime. Additionally, NGINX serves as a reverse proxy server, optimizing performance and security. The project follows a microservices architecture, with the frontend and backend developed as independent services for enhanced scalability and maintainability.",
+  //   image:
+  //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPirY7lTkNQHkQfy1Sus-A1pUjCqMbMhUDsg&s",
+  //   tags: [
+  //     "React Js",
+  //     "Node.js",
+  //     "React Redux",
+  //     "Tailwind CSS",
+  //     "Mongo DB",
+  //     "DaisyUi",
+  //     "Express Js",
+  //     "AWS EC2",
+  //     "Nginx",
+  //     "pm2",
+  //   ],
+  //   category: "web app",
+  //   github: "https://github.com/Deepakkumar586/DevTinder-Frontend",
+  //   webapp: "http://51.20.82.159/",
+  // },
   {
     id: 0,
     title: "Shopping Cart",
@@ -439,32 +439,32 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/Password-Generator",
     webapp: "https://password-generator-one-dun.vercel.app/",
   },
-  {
-    id: 19,
-    title: "Consta Marine",
-    type: "company",
-    description:
-      "ContsaMarine is a responsive and visually engaging platform dedicated to aquatic life, aquariums, and marine aquascaping. Designed with modern UI/UX principles, the website showcases breathtaking underwater concepts and interactive galleries, enhancing user engagement by 90% and improving accessibility across all devices. Despite being a fresh entrant in the UAE’s aquascaping industry, the platform highlights a passion for innovation and delivers a professional, client-focused digital experience that inspires marine enthusiasts and customers alike.",
-    image:
-      "constamarine.png",
-    tags: ["HTML", "Javascript", "CSS3"],
-    category: "web app",
-    // github: "https://github.com/Deepakkumar586/Weather-App",
-    webapp: "https://constamarine.com/",
-  },
-  {
-    id: 20,
-    title: "SpeedLoad",
-    type: "company",
-    description:
-      "Speed Load is India’s trusted delivery partner, offering fast, secure, and affordable courier & transport services. With nationwide coverage and real-time tracking, we make shipping simple, reliable, and hassle-free. Our landing page showcases key features, customer benefits, and an easy call-to-action for users to download the app and start shipping instantly.",
-    image:
-      "speedload.png",
-    tags: ["HTML", "Javascript", "CSS3"],
-    category: "web app",
-    // github: "https://github.com/Deepakkumar586/Weather-App",
-    webapp: "https://speedload.in/",
-  },
+  // {
+  //   id: 19,
+  //   title: "Consta Marine",
+  //   type: "company",
+  //   description:
+  //     "ContsaMarine is a responsive and visually engaging platform dedicated to aquatic life, aquariums, and marine aquascaping. Designed with modern UI/UX principles, the website showcases breathtaking underwater concepts and interactive galleries, enhancing user engagement by 90% and improving accessibility across all devices. Despite being a fresh entrant in the UAE’s aquascaping industry, the platform highlights a passion for innovation and delivers a professional, client-focused digital experience that inspires marine enthusiasts and customers alike.",
+  //   image:
+  //     "constamarine.png",
+  //   tags: ["HTML", "Javascript", "CSS3"],
+  //   category: "web app",
+  //   // github: "https://github.com/Deepakkumar586/Weather-App",
+  //   webapp: "https://constamarine.com/",
+  // },
+  // {
+  //   id: 20,
+  //   title: "SpeedLoad",
+  //   type: "company",
+  //   description:
+  //     "Speed Load is India’s trusted delivery partner, offering fast, secure, and affordable courier & transport services. With nationwide coverage and real-time tracking, we make shipping simple, reliable, and hassle-free. Our landing page showcases key features, customer benefits, and an easy call-to-action for users to download the app and start shipping instantly.",
+  //   image:
+  //     "speedload.png",
+  //   tags: ["HTML", "Javascript", "CSS3"],
+  //   category: "web app",
+  //   // github: "https://github.com/Deepakkumar586/Weather-App",
+  //   webapp: "https://speedload.in/",
+  // },
   {
     id: 19,
     title: "Rock Paper Scissors",
