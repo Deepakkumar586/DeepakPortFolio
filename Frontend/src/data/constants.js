@@ -6,9 +6,9 @@ export const Bio = {
   description:
     "I am a highly motivated professional with experience as a Frontend Developer at Maisha Infotech, where I contributed to building responsive, scalable, and user-friendly applications. With strong expertise in the MERN stack, I specialize in creating seamless web solutions that blend functionality with great user experience. My problem-solving mindset, ability to adapt to dynamic challenges, and dedication to continuous learning allow me to deliver impactful solutions and drive innovation in every project I take on.",
   github: "https://github.com/Deepakkumar586",
-  gmail: "aryanrajj1234@gmail.com",
+  gmail: "deeparyan345@gmail.com",
   resume:
-    "https://drive.google.com/file/d/1Pq0m33p15jSQlUr9ifs1RtcEiurDDIQV/view?usp=sharing",
+    "https://drive.google.com/file/d/15Hg7PG-tDzT84Fgp1pN4E-EKcd0AIcb_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/deepak-kumar-41bab6221/",
 };
 
@@ -155,12 +155,12 @@ export const experiences = [
     date: "December 2024 - present",
     desc: "Worked on multiple assignments and projects including HolyHotels, Wingz4U, OrkoAdvanceLearning, Swafe Wellness, and UniqueVarsity, actively participating in client meetings to gather requirements and align deliverables. Created professional, responsive landing pages and user-interactive platforms that enhanced accessibility, improved engagement by 95%, and achieved 100% client satisfaction.",
     skills: [
-     
+
       "HTML",
       "CSS",
       "JavaScript",
       "Gsap",
-       "ReactJS",
+      "ReactJS",
       "Bootstrap",
       "Tailwind CSS",
     ],
@@ -218,10 +218,10 @@ export const education = [
 ];
 
 export const projects = [
-   {
+  {
     id: 11,
     title: "Hotel Booking Web Platform",
-     type: "company", 
+    type: "company",
     description:
       "This project is a fully responsive hotel booking platform designed to showcase a diverse range of stays, including hotels, apartments, villas, and resorts. The platform emphasizes a smooth and intuitive user experience through clean navigation, interactive landing sections, and a mobile-first UI design.Users can explore detailed property listings, apply filters, and interact with visually engaging, user-friendly interfaces. The system is built with a strong focus on responsiveness, accessibility, and client-centric functionality, ensuring enhanced user engagement and a seamless booking journey from start to finish.",
     image:
@@ -233,16 +233,16 @@ export const projects = [
       "Javascript",
       "Gsap",
 
-      
+
     ],
     category: "web app",
     // github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://www.holyhotels.in/",
   },
-   {
+  {
     id: 11,
     title: "Wellness Therapy Interface Project",
-      type: "company",
+    type: "company",
     description:
       "A holistic wellness and therapy platform designed to promote relaxation, rejuvenation, and balanced living through a calming, user-focused digital experience. The platform showcases a variety of therapeutic services that help reduce stress, boost energy, and support overall physical and mental well-being. It emphasizes mindful lifestyle practices that counter fatigue, inflammation, and common lifestyle-related challenges while encouraging a healthier, more harmonious daily routine. With a soothing visual design, clear content flow, and accessible UI elements, the platform serves as a peaceful digital space that inspires long-term wellness and mindful living.",
     image:
@@ -254,17 +254,17 @@ export const projects = [
       "Javascript",
       "Gsap",
 
-      
+
     ],
     category: "web app",
     // github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://swafewellness.com/",
   },
-   {
+  {
     id: 11,
     title: "Logistics Delivery Website",
 
-      type: "company",
+    type: "company",
     description:
       "A responsive logistics and delivery platform simplifying international and domestic transportation for individuals and businesses. It offers a user-friendly web experience with optimized landing pages, streamlined booking flows, and clear service information, improving user engagement, accessibility, and mobile compatibility. Focused on clarity, efficiency, and trust, the platform enhances client interactions and ensures safe, fast, and seamless delivery solutions.",
     image:
@@ -276,17 +276,17 @@ export const projects = [
       "Javascript",
       "Gsap",
 
-      
+
     ],
     category: "web app",
     // github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://wingz4u.com/",
   },
-   {
+  {
     id: 11,
     title: "Real Estate Platform",
 
-      type: "company",
+    type: "company",
     description:
       "A trusted real estate platform showcasing premium residential and commercial properties. Responsible for designing the UI and implementing the frontend, creating a responsive, visually appealing, and user-friendly interface. The platform enables seamless property browsing, detailed views, and interactive navigation across devices, enhancing overall user experience and engagement.",
     image:
@@ -296,9 +296,9 @@ export const projects = [
       "CSS",
       "Bootstrap",
       "Javascript",
-      
 
-      
+
+
     ],
     category: "web app",
     // github: "https://github.com/Deepakkumar586/TalentHive",
@@ -328,7 +328,7 @@ export const projects = [
     github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://talenthive-kkxx.onrender.com/",
   },
-  
+
 
   {
     id: 12,
