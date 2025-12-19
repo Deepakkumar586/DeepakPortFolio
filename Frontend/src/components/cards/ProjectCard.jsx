@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 562px;
+  height: 560px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -144,7 +144,7 @@ const ProjectCard = ({ project, setOpenModal }) => {
         <Details>
           <Title>{project.title}</Title>
           <Date>{project.date}</Date>
-          <Description>{project.description}</Description>
+          <Description>{project.description.slice(1, 100)}</Description>
         </Details>
         <Members>
           {project.member?.map((member, i) => (

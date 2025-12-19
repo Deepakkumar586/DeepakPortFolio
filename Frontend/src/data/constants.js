@@ -2,13 +2,13 @@ import TalentHive from "../images/TalentHive.png";
 
 export const Bio = {
   name: "Deepak Kumar",
-  roles: ["Frontend Developer",],
+  roles: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
   description:
     "Highly motivated Frontend Developer with professional experience at Maisha Infotech, specializing in building responsive, scalable, and user-focused web applications using React.js, JavaScript, Tailwind CSS, and the MERN stack. I excel at transforming complex ideas into clean and interactive UIs, optimizing performance, and delivering seamless UX across devices. With strong problem-solving skills, a fast-learning mindset, and a dedication to writing maintainable code, I consistently contribute to innovation and efficient product development.",
   github: "https://github.com/Deepakkumar586",
   gmail: "deeparyan345@gmail.com",
   resume:
-    "https://drive.google.com/file/d/15Hg7PG-tDzT84Fgp1pN4E-EKcd0AIcb_/view?usp=sharing",
+    "https://drive.google.com/file/d/1Xn2cdOIjW4zlqmfGL1CrsPodjca-b2Hg/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/deepak-kumar-41bab6221/",
 };
 
@@ -105,7 +105,7 @@ export const skills = [
   },
 
   {
-    title: "Developer Tools",
+    title: "Developer Tools & Cloud ",
     skills: [
       {
         name: "Postman",
@@ -142,6 +142,28 @@ export const skills = [
         image:
           "https://imgix.cosmicjs.com/27ed62c0-de76-11ee-b074-b5c8fe3ef189-render-logo.png?w=300&h=150&auto=format&dpr=3",
       },
+      {
+        name: "Firebase",
+        image:
+          "https://firebase.google.com/images/icons/firebase_studio.png",
+      },
+      {
+        name: "Docker",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscr4Nfid4bYxU8cUAlwpcvGLX6LgilTOOng&s",
+      },
+      {
+        name: "NGINX",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWOoWb2-XM9PsxK940NqKjKKFlmN3Q8zDR0A&s",
+      },
+      {
+        name: "AWS",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xQcwKitRgXfqdi34DYlocPSEXD2G2zZipg&s",
+      },
+
+
     ],
   },
 ];
@@ -327,6 +349,30 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Deepakkumar586/TalentHive",
     webapp: "https://talenthive-kkxx.onrender.com/",
+  },
+  {
+    id: 22,
+    title: "Elite-Mart E-commerce website",
+    type: "personal",
+    description:
+      "EliteMart is a modern full-stack e-commerce website built with the MERN stack. It features Firebase authentication for secure login, advanced cart management with real-time add, update, and delete operations, and Redux state persistence for seamless user experiences. The interface is enhanced with skeleton loaders to reduce perceived load times, while Razorpay integration ensures secure and verified payments. The project is fully Dockerized, with separate backend and frontend images created and published on Docker Hub, demonstrating a production-ready deployment workflow.",
+    image:
+      "Elitemart.png",
+    tags: [
+      "React Js",
+      "React Redux",
+      "Tailwind CSS",
+      "Javascript",
+      "Firebase",
+      "Node js",
+      "Mongo DB",
+      "Express Js",
+      "Razorpay Payment Integartion",
+
+    ],
+    category: "web app",
+    github: "https://github.com/Deepakkumar586/EliteMart",
+    webapp: "https://elite-mart-five.vercel.app/",
   },
 
 
